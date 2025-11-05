@@ -27,7 +27,7 @@ public class Simulation {
         for (int i = this.dice; i < this.results.bins.length; i++) {
             double percentage = (this.results.bins[i] / (double) this.tosses);
             String row = getRow((int) (percentage*100));
-            String result = String.format("%2d : %9d: %.2f ", i, this.results.bins[i], percentage) + row;
+            String result = String.format("%3d : %9d: %.2f ", i, this.results.bins[i], percentage) + row;
             System.out.println(result);
         }
     }
